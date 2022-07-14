@@ -1,7 +1,7 @@
 /*
 When deciding if recursion can help solve a problem, the key is to think about this:
 
-"if I know the answer for a simpler case, can I use to to build the answer I need?"
+"if I know the answer for a simpler case, can I use it to get the answer I need?"
 
 The factorial function in maths works out the product of all integers smaller than or equal to the input.
 
