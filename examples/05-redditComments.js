@@ -91,11 +91,12 @@ At each level of recursion, we are dealing with an array of comments.
 
 We want to add the text to our current string with the correct level of indentation.
 
-If there are no children, we want don't do anything else.
+If there are no children, we want don't do anything else and move to the next comment.
 
-If there are children, we add them too
+If there are children, we add them too with the correct indentation before continuing.
 */
 
+// a helper function to get the indentation: '  ' * n
 function getIndent (n) {
   indent = ''
   for (let i = 0; i < n; i++) {
@@ -104,6 +105,7 @@ function getIndent (n) {
   return indent
 }
 
+// the recursive fuction to display comments
 function formatComments (comments, depth) {
 
   // start with an empty string

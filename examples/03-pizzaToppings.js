@@ -39,7 +39,7 @@ function getPizzas (toppings, n) {
   const basePizzas = getPizzas(toppings, n-1)
   for (let base of basePizzas) {
     for (let top of toppings) {
-      result.push([base,top].join(', '))
+      result.push([base, top].join(', '))
     }
   }
   return result
