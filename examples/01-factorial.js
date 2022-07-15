@@ -24,7 +24,7 @@ function factorial (n) {
     return 1
   }
   // otherwise, we use the previous answer to get the answer we neeed:
-    return factorial(n - 1)
+  return n * factorial(n - 1)
 
 }
 
